@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EltoqXlVyFd6dr07MopLE6qePBTZFdCL+S+bvrQ4Fht7Qlnv4B1NQR20fT7BOAyvw0hm30gmmP5y5z+HosNXZw==",
+  "dgSpecHash": "WCES1QcMeyFObdVmLXjQ8EpSwClSFNN3v1RZ+ula1J5LZRblC2+FdYlWQoKsXSZbPEt7bcS//ZthzJ4BXMMd8Q==",
   "success": true,
-  "projectFilePath": "C:\\Revature\\James-Aluoch\\B\\CSHARP\\helloworld\\helloworld.csproj",
+  "projectFilePath": "C:\\Revature\\James-Aluoch\\B\\CSHARP\\HelloWorld\\helloworld.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
