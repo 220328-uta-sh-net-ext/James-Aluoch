@@ -1,0 +1,5 @@
+C:\Revature\James-Aluoch\B\CSHARP\obj\Debug\net6.0\helloworld.csproj.AssemblyReference.cache
+C:\Revature\James-Aluoch\B\CSHARP\obj\Debug\net6.0\helloworld.GeneratedMSBuildEditorConfig.editorconfig
+C:\Revature\James-Aluoch\B\CSHARP\obj\Debug\net6.0\helloworld.AssemblyInfoInputs.cache
+C:\Revature\James-Aluoch\B\CSHARP\obj\Debug\net6.0\helloworld.AssemblyInfo.cs
+C:\Revature\James-Aluoch\B\CSHARP\obj\Debug\net6.0\helloworld.csproj.CoreCompileInputs.cache
