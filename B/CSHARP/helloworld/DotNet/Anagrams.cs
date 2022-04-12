@@ -1,7 +1,9 @@
 
-class Program{
+using System;
+
+public class ProgramAnagram{
     public class Anagram{
-         public static bool Anagram(string s1,string s2)
+         public static bool AnagramAnagram(string s1,string s2)
         {
             if(s1.Length != s2.Length)
               {

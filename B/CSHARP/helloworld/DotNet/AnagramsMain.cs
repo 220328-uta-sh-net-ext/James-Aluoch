@@ -1,6 +1,6 @@
 
-static void Main(string[] args) 
-{  
+//static void Main(string[] args) 
+//{  
         string s1, s2;
         //Gets words from user.  
         Console.WriteLine("Enter first string");  
@@ -18,7 +18,7 @@ static void Main(string[] args)
         }  
         Console.ReadLine();  
     
-}  
+//}  
 
 
 

@@ -1,4 +1,6 @@
-dotnet static void Main(string[] args)
+
+
+static void Main(string[] args)
 {
     int i;
     int b = 8, a = 32;
