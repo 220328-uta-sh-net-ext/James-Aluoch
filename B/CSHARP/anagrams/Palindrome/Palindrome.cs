@@ -1,8 +1,10 @@
- static void Main(string[] args)
+ 
+
+public static void Main(string[] args)
 {
             Console.WriteLine(new Program().Palindrome("madam"));
-
-       static bool Palindrome(string s) 
+        
+         static bool Palindrome(string s) 
 		{
             int end = s.Length-1;
 
