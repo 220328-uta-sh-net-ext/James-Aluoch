@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace UI
 {
-    internal class Employee
+    enum Authority
+    {
+        Hire,Fire, Delegate
+    }
+    public class Employee
     {
         //members -> variables,constants,methods,events,constructors etc.....
         //variables
