@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_0
 {
-    internal class RestaurantRevBL
+    internal class RestaurantDL
     {
-
     }
 }

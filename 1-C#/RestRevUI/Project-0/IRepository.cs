@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Project_0
 {
-    internal class RestaurantRevBL
+    public interface IRepository
     {
-
+        AddNewUser();
     }
 }

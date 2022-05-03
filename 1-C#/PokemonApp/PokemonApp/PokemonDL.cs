@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_0
+namespace PokemonApp
 {
-    internal class RestaurantRevBL
+    internal class PokemonDL
     {
-
     }
 }
