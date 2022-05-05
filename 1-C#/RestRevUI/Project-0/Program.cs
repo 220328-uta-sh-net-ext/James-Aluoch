@@ -12,7 +12,7 @@ namespace RestRevApp
 {
     class Program
     {
-        private static String cstring = @"Data source==(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Revature\James-Aluoch\1-C#\RestRevUI\Project-0\password_1.mdf;Integrated Security=True;Connect Timeout=30";
+        //private static String cstring = @"Data source==(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Revature\James-Aluoch\1-C#\RestRevUI\Project-0\password_1.mdf;Integrated Security=True;Connect Timeout=30";
         static void Main(String[] args)
         {
 

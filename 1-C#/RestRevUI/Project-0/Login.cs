@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_0
 {
-    public interface IRepository
+    internal class Login
     {
-        //AddNewUser();
     }
 }

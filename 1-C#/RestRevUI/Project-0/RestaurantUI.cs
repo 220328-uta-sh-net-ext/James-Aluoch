@@ -12,7 +12,7 @@ namespace Project_0
         //Create and configure our logger
         private static String cstring = @"Data source==(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Revature\James-Aluoch\1-C#\RestRevUI\Project-0\password_1.mdf;Integrated Security=True;Connect Timeout=30";
 
-
+        /*
         //main loop through menu and calls methods  based on choice
         bool choice = true;
         Imenu menu = new MainMenu();
@@ -75,6 +75,6 @@ namespace Project_0
                     }//end of switch
             }//end of while
 
-
+        */
     }
 }
