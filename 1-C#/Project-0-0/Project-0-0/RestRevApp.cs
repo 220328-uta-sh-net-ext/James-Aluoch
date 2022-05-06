@@ -12,7 +12,19 @@ namespace Project_0_0
 
         public void Display()
         {
-            Console.WriteLine("Menu");
+            //declare variables
+            int choice =0;
+
+            string star;
+
+            //display menu
+            star = "*** *** *** *** ***\n**** **** **** **** ****\n***** ***** ***** ***** *****\n*** *** *** *** ***\n** ** ** ** **\n";
+            Console.WriteLine(star);
+            //display Menu
+
+            Console.WriteLine(" Options");
+            Console.WriteLine("  Display Menu");
+    
 
             Console.WriteLine("1: Enter 1 to add a new user");
             Console.WriteLine("2: Enter 2 to search user admin");
@@ -23,6 +35,10 @@ namespace Project_0_0
             Console.WriteLine("7: Enter 7 to calculate reviews of restaurant as user");
             Console.WriteLine("8: Enter 8 to search restaurant by name,rating,zipcode,address");
             Console.WriteLine("-1: Enter -1 to exit the program");
+            Console.WriteLine("**  ** ** ** **\n *** *** *** *** ***\n **** **** **** **** ****\n*** *** *** *** ***\n** ** ** ** **\n");
+            Console.WriteLine("Enter the menu options:");
+            Console.ReadLine();
+
         }
         public string AddnewUser()
         {
