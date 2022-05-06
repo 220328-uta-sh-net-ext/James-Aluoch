@@ -12,9 +12,32 @@ namespace RestRevApp
 {
     class Program
     {
-        //private static String cstring = @"Data source==(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Revature\James-Aluoch\1-C#\RestRevUI\Project-0\password_1.mdf;Integrated Security=True;Connect Timeout=30";
+         static String connectionstring = @"Data source==(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Revature\James-Aluoch\1-C#\RestRevUI\Project-0\password_1.mdf;Integrated Security=True;Connect Timeout=30";
+        static SqlConnection sqlconn = new SqlConnection(connectionstring);
+
+        public static object sqlCommand { get; private set; }
+
         static void Main(String[] args)
         {
+            using(sqlconn)
+            {
+                try
+                {
+                    sqlconn.Open();
+                    string queryString = "SELECT COUNT(*) FROM userT WHERE username=@uname AND PwdUser=@pass";
+                    using(SqlConnection connection = new SqlConnection(queryString))
+                    {
+                        SqlCommand command = new SqlCommand(queryString, connection);   
+                        connection.Open();
+                    }
+                    
+                }
+                catch (Exception ex)
+                { 
+                    Console.WriteLine(ex.Message); 
+                }
+                   
+            }
 
             //main loop through menu and calls methods  based on choice
             string choice;
@@ -90,8 +113,7 @@ namespace RestRevApp
         }
     }
 }
-/*
-            static void AddNewUser()
+    /*   static void AddNewUser()
             {
                 public string getUserPwd { get; set; }  
                 public string getpass { get; set; }
