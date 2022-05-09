@@ -412,10 +412,10 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
   **Concatenation**
   -The concatenation is a process in which one sequence is appended into another sequence. In LINQ, the concatenation operation contains only one 
   -operator that is known as Concat. It is used to append two same types of sequences or collections and return a new sequence or collection.
-  ** Aggregation**
+  **Aggregation**
   -In LINQ, aggregation functions are those functions which are used to calculate a single value from the collection of the values.
   
- ** Following is the list of the methods that are used to perform aggregation operations:**
+ **Following is the list of the methods that are used to perform aggregation operations:**
   
 - 1 Aggregate	-It performs, a custom aggregation operation on the values of a collection.
 - 2 Average	-It calculates the average value of a collection of values.
@@ -449,7 +449,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
   - 4 Repeat-Generates a sequence containing repeated values of a specific length
   
   
- **Set Operations **
+ **Set Operations**
   -Set operations in LINQ refer to query operations that produce a result set that is based on the presence or absence of equivalent 
   -elements within the same or separate collections (or sets)
   -Examples 
