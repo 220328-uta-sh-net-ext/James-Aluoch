@@ -464,7 +464,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
   -the sequence or ---collection are equal or not. If the given sequences or collections are equal then it returns true otherwise return false.
   
   **Element Operators**
-  -In LINQ, element operators are used to returning the first and last element of the list or single element from the collection or a specific element based on the index value from the collection.
+  -In LINQ, element operators are used to returning the first and last element of the list or single element from the collection or a specific element based on the index value from the collection.<br>
   **There are eight types of element operators in LINQ.**
 - 1 ElementAt
 - 2 ElementAtOrDefault.
