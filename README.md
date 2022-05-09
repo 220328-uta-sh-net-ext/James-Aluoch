@@ -39,7 +39,7 @@
 - Compile time safety of quesries -provides type checking of objects at compile time
 - IntelliSense support-LINQ provides IntelliSense for generic collections.
 - Shaping data - you can retrieve data in different shapes
-``
+```
 Example: LINQ Query to Array
 // Data source
 string[] names = {"George", "david", "Nick", "Donald" };
@@ -52,7 +52,7 @@ var myLinqQuery = from name in names
 // Query execution
 foreach(var name in myLinqQuery)
     Console.Write(name + " ");
-``
+   ```
 ##LINQ API
 ## What is LINQ API?
 - LINQ API is a query syntax kit at the language level in C# and VB.NET to retieve data from different data sources(database).
