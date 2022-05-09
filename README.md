@@ -458,7 +458,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
 - 3 Intersect-	Returns the set of values found to be identical in two separate collections	
 - 4 Union-	Combines content of two different collections into a single list that too without any duplicate content
   
-  **Equality**
+  **Equality**<br>
  **What are Equality?**
   -In LINQ, the equality operation contains only one operator that is known as SequenceEqual. It is used to check whether the given elements in 
   -the sequence or ---collection are equal or not. If the given sequences or collections are equal then it returns true otherwise return false.
