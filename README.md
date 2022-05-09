@@ -53,17 +53,17 @@ var myLinqQuery = from name in names
 foreach(var name in myLinqQuery)
     Console.Write(name + " ");
    ```
-##LINQ API
+# LINQ API
 ## What is LINQ API?
 - LINQ API is a query syntax kit at the language level in C# and VB.NET to retieve data from different data sources(database).
 - LINQ API is includes two main static classes.
 -  1 Enumerable 
 -  2 Queryable
-- Enumerable class includes extension methods for the classes that implement IEnumerable<T> Interface
+- Enumerable class includes extension methods for the  classes that implement IEnumerable<T> Interface
  - Queryable class includes extension methods for the classes that implement IQueryable<T> Interface
  -  Examples of Enumerable class inludes extension methods are in memory collection i.e List,Dictionary,Queue,Hashset,SortedList,LinkedList
  - Examples of Queryable class inludes extension methods for remote queries i.e LINQ to SQL,LINQ to Amazon,PLINQ,EntityFramework and LDAP
-  ##LINQ QUERY SNYAX
+  ## LINQ QUERY SNYAX
   -There two ways to write LINQ query to IEnumable Collection or IQueryable data sources.
   -  1  Query syntax or query expression syntax
   -  2 Method syntax or method Entesion syntax or Fluent
