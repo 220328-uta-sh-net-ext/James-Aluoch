@@ -438,7 +438,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
   - 1 Skip-Skips some specified number of elements within a sequence and returns the remaining ones
   - 2 SkipWhile-Same as that of Skip with the only exception that number of elements to skip are specified by a Boolean condition
   - 3 Take-Take a specified number of elements from a sequence and skip the remaining ones
-  - 4 TakeWhile-Same as that of Take except the fact that number of elements to take are specified by a Boolean condition
+  - 4 TakeWhile-Same as that of Take except the fact that number of elements to take are specified by a Boolean condition<br>
   **Generation Operations**
   -LINQ includes generation operators DefaultIfEmpty, Empty, Range & Repeat. The Empty, Range & Repeat methods are
   -not extension methods for IEnumerable or IQueryable but they are simply static methods defined in a static class Enumerable.
