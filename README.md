@@ -141,7 +141,8 @@ int result = multiplyByFive(7);
 - 11 Generation Operations
 - 12 Set Operations
 - 13 Equality
-- 14 Element Operators
+- 14 Element Operators <br>
+  
   **Filtering Operators**
   - Filtering is an operation to restrict the result set such that it has only selected elements satisfying a particular condition.
   -Examples of operators
