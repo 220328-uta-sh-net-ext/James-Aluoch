@@ -177,9 +177,9 @@ var intResult = from s in mixedList.OfType<int>()
 ```
   **Join Operators**
   -The Join operator joins two sequences (collections) based on a key and returns a resulted sequence.<br>
-  **GroupJoin**
-  - The GroupJoin operator joins two sequences based on keys and returns groups of sequences. It is like Left Outer Join of SQL.<br>
-  - The Join operator operates on two collections, inner collection & outer collection.<br>
+ 
+  - The GroupJoin operator -joins two sequences based on keys and returns groups of sequences. It is like Left Outer Join of SQL.<br>
+  - The Join operator -operates on two collections, inner collection & outer collection.<br>
   - It returns a new collection that contains elements from both the collections -  which satisfies specified expression. It is the same as inner join of SQL.
    - Example: Join operator C#
 ```
