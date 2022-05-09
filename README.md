@@ -174,13 +174,13 @@ var stringResult = from s in mixedList.OfType<string>()
 var intResult = from s in mixedList.OfType<int>()
                 select s;
 ```
-  **Join Operators
+  **Join Operators**
   -The Join operator joins two sequences (collections) based on a key and returns a resulted sequence.
-  **GroupJoin
-  -The GroupJoin operator joins two sequences based on keys and returns groups of sequences. It is like Left Outer Join of SQL.
-  -The Join operator operates on two collections, inner collection & outer collection.
-  -It returns a new collection that contains elements from both the collections -  which satisfies specified expression. It is the same as inner join of SQL.
-  -Example: Join operator C#
+  **GroupJoin**
+  - The GroupJoin operator joins two sequences based on keys and returns groups of sequences. It is like Left Outer Join of SQL.
+  - The Join operator operates on two collections, inner collection & outer collection.
+  - It returns a new collection that contains elements from both the collections -  which satisfies specified expression. It is the same as inner join of SQL.
+   - Example: Join operator C#
 ```
 IList<string> strList1 = new List<string>() { 
     "One", 
@@ -232,13 +232,13 @@ foreach (var item in groupJoin)
         Console.WriteLine(stud.StudentName);
 }
  ```
- ***Projection Operations
--Projection is an operation in which an object is transformed into an altogether new form with only specific properties.
+ ***Projection Operations**
+- Projection is an operation in which an object is transformed into an altogether new form with only specific properties.
   -examples Select and SelectMany
   -  Select-The operator projects values on basis of a transform function
   -  Selectmany -The operator project the sequences of values which are based on a transform function as well as flattens them into a single sequence
  ```
-  Example:
+ Example:
 -Let us understand the select projection operator with some examples. Here we are going to use a console application. So first create a console application with the -name LINQDemo (you can give any meaningful name). Then add a new class file with the name Employee.cs. Once you add the Employee.cs class file, then copy and paste the -following in it.
 
 using System.Collections.Generic;
@@ -267,7 +267,7 @@ namespace LINQDemo
 }
 -As you can see we have created the Employee class with the following four properties such as ID, FirstName, LastName, and Salary. We also created one static method -which will return the list of employees which will act as our data source. Let us discuss some examples to understand the LINQ Select Operator
  ```
-  **Sorting Operators
+  **Sorting Operators**
   -A sorting operator arranges the elements of the collection in ascending or descending order. LINQ includes following sorting operators.
   -  1 OrderBy-Sorts the elements in the collection based on specified fields in ascending or decending order.
   -  2 OrderByDesecending -Sorts the collection based on specified fields in descending order. Only valid in method syntax.
@@ -327,7 +327,7 @@ foreach (var ageGroup in groupedResult)
         Console.WriteLine("Student Name: {0}", s.StudentName);
 }
  ```
-  **ToLookup
+  **ToLookup**
 -ToLookup is the same as GroupBy; the only difference is GroupBy execution is deferred, whereas ToLookup execution is immediate. Also, ToLookup is only applicable in --Method syntax. ToLookup is not supported in the query syntax.
   
 ```
@@ -351,7 +351,7 @@ foreach (var group in lookupResult)
 }
         
   ```
-  **Coversion
+  **Coversion**
   -The Conversion operators in LINQ are useful in converting the type of the elements in a sequence (collection). 
   -There are three types of conversion operators: 
   -  1 As operators (AsEnumerable and AsQueryable), 
@@ -387,7 +387,7 @@ class Program
     }
 }
  ```
-**To Operators: ToArray(), ToList(), ToDictionary()
+**To Operators: ToArray(), ToList(), ToDictionary()**
   -As the name suggests, ToArray(), ToList(), ToDictionary() method converts a source object into an array, List or Dictionary respectively.
   -To operators force the execution of the query. It forces the remote query provider to execute a query and get the result from the underlying data source e.g. SQL Server database.
  ```
@@ -405,72 +405,72 @@ string[] strArray = strList.ToArray<string>();// converts List to Array
 IList<string> list = strArray.ToList<string>(); // converts array into list
  ```
   
-  **Cast
+  **Cast**
  - Cast does the same thing as AsEnumerable<T>. It cast the source object into IEnumerable<T>.
  
-  ^^Concatenation
+  ^^Concatenation**
   -The concatenation is a process in which one sequence is appended into another sequence. In LINQ, the concatenation operation contains only one 
   -operator that is known as Concat. It is used to append two same types of sequences or collections and return a new sequence or collection.
-  ** Aggregation
+  ** Aggregation**
   -In LINQ, aggregation functions are those functions which are used to calculate a single value from the collection of the values.
   
- ** Following is the list of the methods that are used to perform aggregation operations:
+ ** Following is the list of the methods that are used to perform aggregation operations:**
   
--1 Aggregate	-It performs, a custom aggregation operation on the values of a collection.
--2 Average	-It calculates the average value of a collection of values.
--3 Count	-It counts the elements in a collection, optionally only those elements that satisfy a predicate function.
--4 LongCount-	It counts the elements in a large collection, optionally only those elements that satisfy a predicate function.
--5 Max	-It determines the maximum value in a collection.
- -6 Min-	It determines the minimum value in a collection.
--7 Sum	-It calculates the sum of the values in a collection.
-  ##Quantifiers operations
-  **What are Quantifiers operations?
+- 1 Aggregate	-It performs, a custom aggregation operation on the values of a collection.
+- 2 Average	-It calculates the average value of a collection of values.
+- 3 Count	-It counts the elements in a collection, optionally only those elements that satisfy a predicate function.
+- 4 LongCount-	It counts the elements in a large collection, optionally only those elements that satisfy a predicate function.
+- 5 Max	-It determines the maximum value in a collection.
+ - 6 Min-	It determines the minimum value in a collection.
+- 7 Sum	-It calculates the sum of the values in a collection.
+  ##Quantifiers operations**
+  **What are Quantifiers operations?**
   -In LINQ, quantifier operators are used to returning a boolean value which shows that whether some or all elements satisfies the given condition.
-  **There are 3 Quantifiers operations that can be used in LINQ:
+  **There are 3 Quantifiers operations that can be used in LINQ:**
 -  1 All – used to determine whether all the elements in a sequence satisfy a condition.
 -  2 Any - used to determine whether any elements in a sequence satisfy a condition.
 -  3 Contains - used to determine whether a sequence contains a specified element.
   
-**Partition Operations 
+**Partition Operations** 
   -Partitioning in LINQ refers to the operation of dividing an input sequence into two sections, without rearranging the elements, and then returning one of the sections.
   -Examples are:
-  -1 Skip-Skips some specified number of elements within a sequence and returns the remaining ones
-  -2 SkipWhile-Same as that of Skip with the only exception that number of elements to skip are specified by a Boolean condition
-  -3 Take-Take a specified number of elements from a sequence and skip the remaining ones
-  -4 TakeWhile-Same as that of Take except the fact that number of elements to take are specified by a Boolean condition
-  **Generation Operations
+  - 1 Skip-Skips some specified number of elements within a sequence and returns the remaining ones
+  - 2 SkipWhile-Same as that of Skip with the only exception that number of elements to skip are specified by a Boolean condition
+  - 3 Take-Take a specified number of elements from a sequence and skip the remaining ones
+  - 4 TakeWhile-Same as that of Take except the fact that number of elements to take are specified by a Boolean condition
+  **Generation Operations**
   -LINQ includes generation operators DefaultIfEmpty, Empty, Range & Repeat. The Empty, Range & Repeat methods are
   -not extension methods for IEnumerable or IQueryable but they are simply static methods defined in a static class Enumerable.
   -Examples 
-  -1 DefaultIfEmpty	-When applied to an empty sequence, generate a default element within a sequence
-  -2 Empty-Returns an empty sequence of values and is the most simplest generational operator
-  -3 Range-Generates a collection having a sequence of integers or numbers
-  -4 Repeat-Generates a sequence containing repeated values of a specific length
+  - 1 DefaultIfEmpty	-When applied to an empty sequence, generate a default element within a sequence
+  - 2 Empty-Returns an empty sequence of values and is the most simplest generational operator
+  - 3 Range-Generates a collection having a sequence of integers or numbers
+  - 4 Repeat-Generates a sequence containing repeated values of a specific length
   
   
- **Set Operations 
+ **Set Operations **
   -Set operations in LINQ refer to query operations that produce a result set that is based on the presence or absence of equivalent 
   -elements within the same or separate collections (or sets)
   -Examples 
-  -1 Distinct-	Results a list of unique values from a collection by filtering duplicate data if any	
- -2 Except	-Compares the values of two collections and return the ones from one collection who are not in the other collection	
--3 Intersect-	Returns the set of values found to be identical in two separate collections	
--4 Union-	Combines content of two different collections into a single list that too without any duplicate content
+  - 1 Distinct-	Results a list of unique values from a collection by filtering duplicate data if any	
+ - 2 Except	-Compares the values of two collections and return the ones from one collection who are not in the other collection	
+- 3 Intersect-	Returns the set of values found to be identical in two separate collections	
+- 4 Union-	Combines content of two different collections into a single list that too without any duplicate content
   
-  **Equality
+  **Equality**
  ##What are Equality?
   -In LINQ, the equality operation contains only one operator that is known as SequenceEqual. It is used to check whether the given elements in 
   -the sequence or ---collection are equal or not. If the given sequences or collections are equal then it returns true otherwise return false.
   
-  **Element Operators
+  **Element Operators**
   -In LINQ, element operators are used to returning the first and last element of the list or single element from the collection or a specific element based on the index value from the collection.
-  -There are eight types of element operators in LINQ.
--1 ElementAt
--2 ElementAtOrDefault.
--3 First.
--4 FirstOrDefault.
--5 Single.
--6 SingleOrDefault.
--7 Last.
--8 LastOrDefault.
+  **There are eight types of element operators in LINQ.**
+- 1 ElementAt
+- 2 ElementAtOrDefault.
+- 3 First.
+- 4 FirstOrDefault.
+- 5 Single.
+- 6 SingleOrDefault.
+- 7 Last.
+- 8 LastOrDefault.
   
