@@ -67,9 +67,9 @@ foreach(var name in myLinqQuery)
   -There two ways to write LINQ query to IEnumable Collection or IQueryable data sources.
   -1  Query syntax or query expression syntax
   -2 Method syntax or method Entesion syntax or Fluent
-
+```
   -- LINQ Query Syntax 
-  ```
+  
   from <range variable> in <IEnumerable<T> or IQueryable<T> Collection>
 
 <Standard Query Operators> <lambda expression>
@@ -90,7 +90,7 @@ IList<string> stringList = new List<string>() {
 var result = from s in stringList
             where s.Contains("Tutorials") 
             select s;
- ```
+```
  ## Points to Remember :
 -1 As name suggest, Query Syntax is same like SQL (Structure Query Language) syntax.
 - 2. Query Syntax starts with from clause and can be end with Select or GroupBy clause.
@@ -99,13 +99,14 @@ var result = from s in stringList
  ## LINQ method syntax
   - Method syntax (also known as fluent syntax) uses extension methods included in the Enumerable or Queryable static class, similar to how you would call the --extension method of any class.
   - LINQ Method Syntax
+ ```
 - var result = stringList.Where(s => s.Contains("Tutorials"));
 
  - LINQ Method Syntax to find out teenager students
   ``
 - var teenAgerStudents = studentList.Where(s => s.Age > 12 && s.Age < 20)
                                   .ToList<Student>();
-  ``
+ ```
   ##Points to Remember :
 -1 As name suggest, Method Syntax is like calling extension method.
 -2 LINQ Method Syntax aka Fluent syntax because it allows series of extension methods call.
@@ -116,12 +117,12 @@ var result = from s in stringList
   -A lambda expression is a convenient way of defining an anonymous (unnamed) function that can be passed around as a variable or as 
   -a parameter to a method call. Many LINQ methods take a function (called a delegate) as a parameter.
  - an example of what a lambda expression looks like:
-``
--Func<int, int> multiplyByFive = num => num * 5;
--// Returns 35
--int result = multiplyByFive(7);
+```
+Func<int, int> multiplyByFive = num => num * 5;
+// Returns 35
+int result = multiplyByFive(7);
 -The expression num => num * 5 is a lambda expression. The => operator is called the "lambda operator". In this example, num is an input parameter to the anonymous --- function, and the return value of this function is num * 5. So when multiplyByFive is called with a parameter of 7, the result is 7 * 5, or 35.
-  ``
+```
  ## Standard Query Operators 
  **What are standard query Operators?
   -A set of extension methods forming a query pattern is known as LINQ Standard Query Operators.
@@ -146,7 +147,7 @@ var result = from s in stringList
   -Examples of operators
   - WHERE which Filter values based on a predicate function
   -Example: Where clause - LINQ query syntax C#
- ``
+```
 IList<Student> studentList = new List<Student>() { 
         new Student() { StudentID = 1, StudentName = "John", Age = 13} ,
         new Student() { StudentID = 2, StudentName = "Moin",  Age = 21 } ,
@@ -172,7 +173,7 @@ var stringResult = from s in mixedList.OfType<string>()
 
 var intResult = from s in mixedList.OfType<int>()
                 select s;
-  ``
+```
   **Join Operators
   -The Join operator joins two sequences (collections) based on a key and returns a resulted sequence.
   **GroupJoin
@@ -180,7 +181,7 @@ var intResult = from s in mixedList.OfType<int>()
   -The Join operator operates on two collections, inner collection & outer collection.
   -It returns a new collection that contains elements from both the collections -  which satisfies specified expression. It is the same as inner join of SQL.
   -Example: Join operator C#
- ``
+```
 IList<string> strList1 = new List<string>() { 
     "One", 
     "Two", 
@@ -229,13 +230,14 @@ foreach (var item in groupJoin)
 
     foreach(var stud in item.Students)
         Console.WriteLine(stud.StudentName);
-}``
+}
+ ```
  ***Projection Operations
 -Projection is an operation in which an object is transformed into an altogether new form with only specific properties.
   -examples Select and SelectMany
   -Select-The operator projects values on basis of a transform function
   -Selectmany -The operator project the sequences of values which are based on a transform function as well as flattens them into a single sequence
-  ``
+ ```
   Example:
 Let us understand the select projection operator with some examples. Here we are going to use a console application. So first create a console application with the name LINQDemo (you can give any meaningful name). Then add a new class file with the name Employee.cs. Once you add the Employee.cs class file, then copy and paste the following in it.
 
@@ -263,13 +265,13 @@ namespace LINQDemo
         }
     }
 }
-As you can see we have created the Employee class with the following four properties such as ID, FirstName, LastName, and Salary. We also created one static method which will return the list of employees which will act as our data source. Let us discuss some examples to understand the LINQ Select Operator.
-``
+As you can see we have created the Employee class with the following four properties such as ID, FirstName, LastName, and Salary. We also created one static method which will return the list of employees which will act as our data source. Let us discuss some examples to understand the LINQ Select Operator
+ ```
   **Sorting Operators
   -A sorting operator arranges the elements of the collection in ascending or descending order. LINQ includes following sorting operators.
   -1 OrderBy-Sorts the elements in the collection based on specified fields in ascending or decending order.
   -2 OrderByDesecending -Sorts the collection based on specified fields in descending order. Only valid in method syntax.
- ``
+```
   Example: OrderBy in Query Syntax C#
 IList<Student> studentList = new List<Student>() { 
     new Student() { StudentID = 1, StudentName = "John", Age = 18 } ,
@@ -298,12 +300,12 @@ IList<Student> studentList = new List<Student>() {
 };
 
 var studentsInDescOrder = studentList.OrderByDescending(s => s.StudentName);
- ``
+ ```
   **Grouping Operators
   -In LINQ, grouping operators pick the elements of the sequence or collection which contains common attributes and serve them in a group
   -1 GroupBy-The GroupBy operator returns groups of elements based on some key value. Each group is represented by IGrouping<TKey, TElement> object.
   -2 ToLookup -ToLookup is the same as GroupBy; the only difference is the execution of GroupBy is deferred whereas ToLookup execution is immediate.
- ``
+```
   Example: GroupBy in Query syntax C#
 IList<Student> studentList = new List<Student>() { 
         new Student() { StudentID = 1, StudentName = "John", Age = 18 } ,
@@ -324,11 +326,11 @@ foreach (var ageGroup in groupedResult)
     foreach(Student s in ageGroup) // Each group has inner collection
         Console.WriteLine("Student Name: {0}", s.StudentName);
 }
- ``
+ ```
   **ToLookup
 -ToLookup is the same as GroupBy; the only difference is GroupBy execution is deferred, whereas ToLookup execution is immediate. Also, ToLookup is only applicable in --Method syntax. ToLookup is not supported in the query syntax.
   
- ``
+```
   Example: ToLookup in method syntax C#
 IList<Student> studentList = new List<Student>() { 
         new Student() { StudentID = 1, StudentName = "John", Age = 18 } ,
@@ -348,7 +350,7 @@ foreach (var group in lookupResult)
         Console.WriteLine("Student Name: {0}", s.StudentName);
 }
         
-  ``
+  ```
   **Coversion
   -The Conversion operators in LINQ are useful in converting the type of the elements in a sequence (collection). 
   -There are three types of conversion operators: 
@@ -358,7 +360,7 @@ foreach (var group in lookupResult)
   -AsEnumerable	-Returns the input sequence as IEnumerable<t>
   -AsEnumerable & AsQueryable
  -- The AsEnumerable and AsQueryable methods cast or convert a source object to IEnumerable<T> or IQueryable<T> respectively.
- ``
+```
   Example: AsEnumerable & AsQueryable operator in C#:
 class Program
 {
@@ -384,11 +386,11 @@ class Program
         ReportTypeProperties(studentArray.AsQueryable());   
     }
 }
- ``
+ ```
 **To Operators: ToArray(), ToList(), ToDictionary()
   -As the name suggests, ToArray(), ToList(), ToDictionary() method converts a source object into an array, List or Dictionary respectively.
   -To operators force the execution of the query. It forces the remote query provider to execute a query and get the result from the underlying data source e.g. SQL Server database.
-  ``
+ ```
   Example: ToArray & ToList in C#
 IList<string> strList = new List<string>() { 
                                             "One", 
@@ -401,7 +403,7 @@ IList<string> strList = new List<string>() {
 string[] strArray = strList.ToArray<string>();// converts List to Array
 
 IList<string> list = strArray.ToList<string>(); // converts array into list
- ``
+ ```
   
   **Cast
  - Cast does the same thing as AsEnumerable<T>. It cast the source object into IEnumerable<T>.
