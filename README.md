@@ -411,7 +411,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
  
   **Concatenation**
   -The concatenation is a process in which one sequence is appended into another sequence. In LINQ, the concatenation operation contains only one 
-  -operator that is known as Concat. It is used to append two same types of sequences or collections and return a new sequence or collection.
+  -operator that is known as Concat. It is used to append two same types of sequences or collections and return a new sequence or collection.<br>
   **Aggregation**
   -In LINQ, aggregation functions are those functions which are used to calculate a single value from the collection of the values.
   
