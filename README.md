@@ -57,16 +57,16 @@ foreach(var name in myLinqQuery)
 ## What is LINQ API?
 - LINQ API is a query syntax kit at the language level in C# and VB.NET to retieve data from different data sources(database).
 - LINQ API is includes two main static classes.
-- 1 Enumerable 
-- 2 Queryable
+-  1 Enumerable 
+-  2 Queryable
 - Enumerable class includes extension methods for the classes that implement IEnumerable<T> Interface
  - Queryable class includes extension methods for the classes that implement IQueryable<T> Interface
  -  Examples of Enumerable class inludes extension methods are in memory collection i.e List,Dictionary,Queue,Hashset,SortedList,LinkedList
  - Examples of Queryable class inludes extension methods for remote queries i.e LINQ to SQL,LINQ to Amazon,PLINQ,EntityFramework and LDAP
   ##LINQ QUERY SNYAX
   -There two ways to write LINQ query to IEnumable Collection or IQueryable data sources.
-  -1  Query syntax or query expression syntax
-  -2 Method syntax or method Entesion syntax or Fluent
+  -  1  Query syntax or query expression syntax
+  -  2 Method syntax or method Entesion syntax or Fluent
 ```
    LINQ Query Syntax 
   
@@ -93,7 +93,7 @@ var result = from s in stringList
 ```
  ## Points to Remember :
 - 1 As name suggest, Query Syntax is same like SQL (Structure Query Language) syntax.
-- 2. Query Syntax starts with from clause and can be end with Select or GroupBy clause.
+- 2.Query Syntax starts with from clause and can be end with Select or GroupBy clause.
 - 3 Use various other opertors like filtering, joining, grouping, sorting operators to construct the desired result.
 - 4 Implicitly typed variable - var can be used to hold the result of the LINQ query
  ## LINQ method syntax
@@ -113,7 +113,7 @@ var result = from s in stringList
 - 3 Implicitly typed variable - var can be used to hold the result of the LINQ query.
   
 ## Lambda Expresion 
-  --What is lambda expresion?
+  -What is lambda expresion?
   -A lambda expression is a convenient way of defining an anonymous (unnamed) function that can be passed around as a variable or as 
   -a parameter to a method call. Many LINQ methods take a function (called a delegate) as a parameter.
  - an example of what a lambda expression looks like:
@@ -128,7 +128,7 @@ int result = multiplyByFive(7);
   -A set of extension methods forming a query pattern is known as LINQ Standard Query Operators.
   -As building blocks of LINQ query expressions, these operators offer a range of query capabilities like filtering, sorting, projection, aggregation,etc
   ## LINQ standard query operators can be categorized into the following ones on the basis of their functionality.
- -1  Filtering Operators
+ -1 Filtering Operators
   -2 Join Operators
   -3 Projection Operations
   -4 Sorting Operators
@@ -235,11 +235,11 @@ foreach (var item in groupJoin)
  ***Projection Operations
 -Projection is an operation in which an object is transformed into an altogether new form with only specific properties.
   -examples Select and SelectMany
-  -Select-The operator projects values on basis of a transform function
-  -Selectmany -The operator project the sequences of values which are based on a transform function as well as flattens them into a single sequence
+  -  Select-The operator projects values on basis of a transform function
+  -  Selectmany -The operator project the sequences of values which are based on a transform function as well as flattens them into a single sequence
  ```
   Example:
-Let us understand the select projection operator with some examples. Here we are going to use a console application. So first create a console application with the name LINQDemo (you can give any meaningful name). Then add a new class file with the name Employee.cs. Once you add the Employee.cs class file, then copy and paste the following in it.
+-Let us understand the select projection operator with some examples. Here we are going to use a console application. So first create a console application with the -name LINQDemo (you can give any meaningful name). Then add a new class file with the name Employee.cs. Once you add the Employee.cs class file, then copy and paste the -following in it.
 
 using System.Collections.Generic;
 namespace LINQDemo
@@ -265,12 +265,12 @@ namespace LINQDemo
         }
     }
 }
-As you can see we have created the Employee class with the following four properties such as ID, FirstName, LastName, and Salary. We also created one static method which will return the list of employees which will act as our data source. Let us discuss some examples to understand the LINQ Select Operator
+-As you can see we have created the Employee class with the following four properties such as ID, FirstName, LastName, and Salary. We also created one static method -which will return the list of employees which will act as our data source. Let us discuss some examples to understand the LINQ Select Operator
  ```
   **Sorting Operators
   -A sorting operator arranges the elements of the collection in ascending or descending order. LINQ includes following sorting operators.
-  -1 OrderBy-Sorts the elements in the collection based on specified fields in ascending or decending order.
-  -2 OrderByDesecending -Sorts the collection based on specified fields in descending order. Only valid in method syntax.
+  -  1 OrderBy-Sorts the elements in the collection based on specified fields in ascending or decending order.
+  -  2 OrderByDesecending -Sorts the collection based on specified fields in descending order. Only valid in method syntax.
 ```
   Example: OrderBy in Query Syntax C#
 IList<Student> studentList = new List<Student>() { 
@@ -354,9 +354,9 @@ foreach (var group in lookupResult)
   **Coversion
   -The Conversion operators in LINQ are useful in converting the type of the elements in a sequence (collection). 
   -There are three types of conversion operators: 
-  -1 As operators (AsEnumerable and AsQueryable), 
-  -2 To operators (ToArray, ToDictionary, ToList and ToLookup), and
-  -3 Casting operators (Cast and OfType
+  -  1 As operators (AsEnumerable and AsQueryable), 
+  -  2 To operators (ToArray, ToDictionary, ToList and ToLookup), and
+  -  3 Casting operators (Cast and OfType
   -AsEnumerable	-Returns the input sequence as IEnumerable<t>
   -AsEnumerable & AsQueryable
  -- The AsEnumerable and AsQueryable methods cast or convert a source object to IEnumerable<T> or IQueryable<T> respectively.
@@ -427,9 +427,9 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
   **What are Quantifiers operations?
   -In LINQ, quantifier operators are used to returning a boolean value which shows that whether some or all elements satisfies the given condition.
   **There are 3 Quantifiers operations that can be used in LINQ:
--1 All – used to determine whether all the elements in a sequence satisfy a condition.
--2 Any - used to determine whether any elements in a sequence satisfy a condition.
--3 Contains - used to determine whether a sequence contains a specified element.
+-  1 All – used to determine whether all the elements in a sequence satisfy a condition.
+-  2 Any - used to determine whether any elements in a sequence satisfy a condition.
+-  3 Contains - used to determine whether a sequence contains a specified element.
   
 **Partition Operations 
   -Partitioning in LINQ refers to the operation of dividing an input sequence into two sections, without rearranging the elements, and then returning one of the sections.
