@@ -68,7 +68,7 @@ foreach(var name in myLinqQuery)
   -1  Query syntax or query expression syntax
   -2 Method syntax or method Entesion syntax or Fluent
 ```
-  -- LINQ Query Syntax 
+   LINQ Query Syntax 
   
   from <range variable> in <IEnumerable<T> or IQueryable<T> Collection>
 
@@ -92,25 +92,25 @@ var result = from s in stringList
             select s;
 ```
  ## Points to Remember :
--1 As name suggest, Query Syntax is same like SQL (Structure Query Language) syntax.
+- 1 As name suggest, Query Syntax is same like SQL (Structure Query Language) syntax.
 - 2. Query Syntax starts with from clause and can be end with Select or GroupBy clause.
--3 Use various other opertors like filtering, joining, grouping, sorting operators to construct the desired result.
--4 Implicitly typed variable - var can be used to hold the result of the LINQ query
+- 3 Use various other opertors like filtering, joining, grouping, sorting operators to construct the desired result.
+- 4 Implicitly typed variable - var can be used to hold the result of the LINQ query
  ## LINQ method syntax
   - Method syntax (also known as fluent syntax) uses extension methods included in the Enumerable or Queryable static class, similar to how you would call the --extension method of any class.
   - LINQ Method Syntax
  ```
-- var result = stringList.Where(s => s.Contains("Tutorials"));
+ var result = stringList.Where(s => s.Contains("Tutorials"));
 
  - LINQ Method Syntax to find out teenager students
   ``
-- var teenAgerStudents = studentList.Where(s => s.Age > 12 && s.Age < 20)
+ var teenAgerStudents = studentList.Where(s => s.Age > 12 && s.Age < 20)
                                   .ToList<Student>();
  ```
   ##Points to Remember :
--1 As name suggest, Method Syntax is like calling extension method.
--2 LINQ Method Syntax aka Fluent syntax because it allows series of extension methods call.
--3 Implicitly typed variable - var can be used to hold the result of the LINQ query.
+- 1 As name suggest, Method Syntax is like calling extension method.
+- 2 LINQ Method Syntax aka Fluent syntax because it allows series of extension methods call.
+- 3 Implicitly typed variable - var can be used to hold the result of the LINQ query.
   
 ## Lambda Expresion 
   --What is lambda expresion?
