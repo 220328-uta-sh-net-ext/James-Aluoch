@@ -69,7 +69,7 @@ foreach(var name in myLinqQuery)
   -2 Method syntax or method Entesion syntax or Fluent
 
   -- LINQ Query Syntax 
-  ``
+  ```
   from <range variable> in <IEnumerable<T> or IQueryable<T> Collection>
 
 <Standard Query Operators> <lambda expression>
@@ -90,7 +90,7 @@ IList<string> stringList = new List<string>() {
 var result = from s in stringList
             where s.Contains("Tutorials") 
             select s;
- `` 
+ ```
  ## Points to Remember :
 -1 As name suggest, Query Syntax is same like SQL (Structure Query Language) syntax.
 - 2. Query Syntax starts with from clause and can be end with Select or GroupBy clause.
