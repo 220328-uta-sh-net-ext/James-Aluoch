@@ -91,12 +91,12 @@ var result = from s in stringList
             where s.Contains("Tutorials") 
             select s;
 ```
- ## Points to Remember :
+ **Points to Remember :**
 - 1 As name suggest, Query Syntax is same like SQL (Structure Query Language) syntax.
 - 2.Query Syntax starts with from clause and can be end with Select or GroupBy clause.
 - 3 Use various other opertors like filtering, joining, grouping, sorting operators to construct the desired result.
 - 4 Implicitly typed variable - var can be used to hold the result of the LINQ query
- ## LINQ method syntax
+ **INQ method syntax**
   - Method syntax (also known as fluent syntax) uses extension methods included in the Enumerable or Queryable static class, similar to how you would call the --extension method of any class.
   - LINQ Method Syntax
  ```
@@ -107,12 +107,12 @@ var result = from s in stringList
  var teenAgerStudents = studentList.Where(s => s.Age > 12 && s.Age < 20)
                                   .ToList<Student>();
  ```
-  ##Points to Remember :
+  **Points to Remember** :
 - 1 As name suggest, Method Syntax is like calling extension method.
 - 2 LINQ Method Syntax aka Fluent syntax because it allows series of extension methods call.
 - 3 Implicitly typed variable - var can be used to hold the result of the LINQ query.
   
-## Lambda Expresion 
+ **Lambda Expresion**
   -What is lambda expresion?
   -A lambda expression is a convenient way of defining an anonymous (unnamed) function that can be passed around as a variable or as 
   -a parameter to a method call. Many LINQ methods take a function (called a delegate) as a parameter.
@@ -142,7 +142,7 @@ int result = multiplyByFive(7);
 - 12 Set Operations
 - 13 Equality
 - 14 Element Operators
-  **Filtering Operators
+  **Filtering Operators**
   - Filtering is an operation to restrict the result set such that it has only selected elements satisfying a particular condition.
   -Examples of operators
   - WHERE which Filter values based on a predicate function
@@ -175,10 +175,10 @@ var intResult = from s in mixedList.OfType<int>()
                 select s;
 ```
   **Join Operators**
-  -The Join operator joins two sequences (collections) based on a key and returns a resulted sequence.
+  -The Join operator joins two sequences (collections) based on a key and returns a resulted sequence.<br>
   **GroupJoin**
-  - The GroupJoin operator joins two sequences based on keys and returns groups of sequences. It is like Left Outer Join of SQL.
-  - The Join operator operates on two collections, inner collection & outer collection.
+  - The GroupJoin operator joins two sequences based on keys and returns groups of sequences. It is like Left Outer Join of SQL.<br>
+  - The Join operator operates on two collections, inner collection & outer collection.<br>
   - It returns a new collection that contains elements from both the collections -  which satisfies specified expression. It is the same as inner join of SQL.
    - Example: Join operator C#
 ```
@@ -301,10 +301,10 @@ IList<Student> studentList = new List<Student>() {
 
 var studentsInDescOrder = studentList.OrderByDescending(s => s.StudentName);
  ```
-  **Grouping Operators
+  **Grouping Operators**
   -In LINQ, grouping operators pick the elements of the sequence or collection which contains common attributes and serve them in a group
-  -1 GroupBy-The GroupBy operator returns groups of elements based on some key value. Each group is represented by IGrouping<TKey, TElement> object.
-  -2 ToLookup -ToLookup is the same as GroupBy; the only difference is the execution of GroupBy is deferred whereas ToLookup execution is immediate.
+  -  1 GroupBy-The GroupBy operator returns groups of elements based on some key value. Each group is represented by IGrouping<TKey, TElement> object.
+  -  2 ToLookup -ToLookup is the same as GroupBy; the only difference is the execution of GroupBy is deferred whereas ToLookup execution is immediate.
 ```
   Example: GroupBy in Query syntax C#
 IList<Student> studentList = new List<Student>() { 
@@ -328,7 +328,7 @@ foreach (var ageGroup in groupedResult)
 }
  ```
   **ToLookup**
--ToLookup is the same as GroupBy; the only difference is GroupBy execution is deferred, whereas ToLookup execution is immediate. Also, ToLookup is only applicable in --Method syntax. ToLookup is not supported in the query syntax.
+- ToLookup is the same as GroupBy; the only difference is GroupBy execution is deferred, whereas ToLookup execution is immediate. Also, ToLookup is only applicable in - Method syntax. ToLookup is not supported in the query syntax.
   
 ```
   Example: ToLookup in method syntax C#
@@ -388,8 +388,8 @@ class Program
 }
  ```
 **To Operators: ToArray(), ToList(), ToDictionary()**
-  -As the name suggests, ToArray(), ToList(), ToDictionary() method converts a source object into an array, List or Dictionary respectively.
-  -To operators force the execution of the query. It forces the remote query provider to execute a query and get the result from the underlying data source e.g. SQL Server database.
+  -  As the name suggests, ToArray(), ToList(), ToDictionary() method converts a source object into an array, List or Dictionary respectively.
+  -  To operators force the execution of the query. It forces the remote query provider to execute a query and get the result from the underlying data source e.g. SQL Server database.
  ```
   Example: ToArray & ToList in C#
 IList<string> strList = new List<string>() { 
