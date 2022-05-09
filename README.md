@@ -413,7 +413,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
   -The concatenation is a process in which one sequence is appended into another sequence. In LINQ, the concatenation operation contains only one 
   -operator that is known as Concat. It is used to append two same types of sequences or collections and return a new sequence or collection.<br>
   **Aggregation**
-  -In LINQ, aggregation functions are those functions which are used to calculate a single value from the collection of the values.
+  -In LINQ, aggregation functions are those functions which are used to calculate a single value from the collection of the values.<br>
   
  **Following is the list of the methods that are used to perform aggregation operations:**
   
@@ -426,7 +426,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
 - 7 Sum	-It calculates the sum of the values in a collection.<br>
   **Quantifiers operations**<br>
   **What are Quantifiers operations?**<br>
-  -In LINQ, quantifier operators are used to returning a boolean value which shows that whether some or all elements satisfies the given condition.
+  -In LINQ, quantifier operators are used to returning a boolean value which shows that whether some or all elements satisfies the given condition.<br>
   **There are 3 Quantifiers operations that can be used in LINQ:**
 -  1 All – used to determine whether all the elements in a sequence satisfy a condition.
 -  2 Any - used to determine whether any elements in a sequence satisfy a condition.
