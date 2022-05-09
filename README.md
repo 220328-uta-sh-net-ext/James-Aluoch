@@ -64,7 +64,7 @@ foreach(var name in myLinqQuery)
  -  Examples of Enumerable class inludes extension methods are in memory collection i.e List,Dictionary,Queue,Hashset,SortedList,LinkedList
  - Examples of Queryable class inludes extension methods for remote queries i.e LINQ to SQL,LINQ to Amazon,PLINQ,EntityFramework and LDAP
   ## LINQ QUERY SNYAX
-  -There two ways to write LINQ query to IEnumable Collection or IQueryable data sources.
+  -There are  two ways to write LINQ query to IEnumable Collection or IQueryable data sources.
   -  1  Query syntax or query expression syntax
   -  2 Method syntax or method Entesion syntax or Fluent
 ```
