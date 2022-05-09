@@ -233,7 +233,7 @@ foreach (var item in groupJoin)
         Console.WriteLine(stud.StudentName);
 }
  ```
- ***Projection Operations**
+ **Projection Operations**
 - Projection is an operation in which an object is transformed into an altogether new form with only specific properties.
   -examples Select and SelectMany
   -  Select-The operator projects values on basis of a transform function
@@ -423,9 +423,9 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
 - 4 LongCount-	It counts the elements in a large collection, optionally only those elements that satisfy a predicate function.
 - 5 Max	-It determines the maximum value in a collection.
  - 6 Min-	It determines the minimum value in a collection.
-- 7 Sum	-It calculates the sum of the values in a collection.
-  ##Quantifiers operations**
-  **What are Quantifiers operations?**
+- 7 Sum	-It calculates the sum of the values in a collection.<br>
+  **Quantifiers operations**<br>
+  **What are Quantifiers operations?**<br>
   -In LINQ, quantifier operators are used to returning a boolean value which shows that whether some or all elements satisfies the given condition.
   **There are 3 Quantifiers operations that can be used in LINQ:**
 -  1 All – used to determine whether all the elements in a sequence satisfy a condition.
@@ -459,7 +459,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
 - 4 Union-	Combines content of two different collections into a single list that too without any duplicate content
   
   **Equality**
- ##What are Equality?
+ **What are Equality?**
   -In LINQ, the equality operation contains only one operator that is known as SequenceEqual. It is used to check whether the given elements in 
   -the sequence or ---collection are equal or not. If the given sequences or collections are equal then it returns true otherwise return false.
   
