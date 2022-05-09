@@ -409,7 +409,7 @@ IList<string> list = strArray.ToList<string>(); // converts array into list
   **Cast**
  - Cast does the same thing as AsEnumerable<T>. It cast the source object into IEnumerable<T>.
  
-  ^^Concatenation**
+  **Concatenation**
   -The concatenation is a process in which one sequence is appended into another sequence. In LINQ, the concatenation operation contains only one 
   -operator that is known as Concat. It is used to append two same types of sequences or collections and return a new sequence or collection.
   ** Aggregation**
