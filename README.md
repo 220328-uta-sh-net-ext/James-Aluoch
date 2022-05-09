@@ -95,8 +95,8 @@ var result = from s in stringList
 - 1 As name suggest, Query Syntax is same like SQL (Structure Query Language) syntax.
 - 2.Query Syntax starts with from clause and can be end with Select or GroupBy clause.
 - 3 Use various other opertors like filtering, joining, grouping, sorting operators to construct the desired result.
-- 4 Implicitly typed variable - var can be used to hold the result of the LINQ query
- **INQ method syntax**
+- 4 Implicitly typed variable - var can be used to hold the result of the LINQ query<br>
+ **LINQ method syntax**
   - Method syntax (also known as fluent syntax) uses extension methods included in the Enumerable or Queryable static class, similar to how you would call the --extension method of any class.
   - LINQ Method Syntax
  ```
