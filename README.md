@@ -124,24 +124,24 @@ int result = multiplyByFive(7);
 -The expression num => num * 5 is a lambda expression. The => operator is called the "lambda operator". In this example, num is an input parameter to the anonymous --- function, and the return value of this function is num * 5. So when multiplyByFive is called with a parameter of 7, the result is 7 * 5, or 35.
 ```
  ## Standard Query Operators 
- **What are standard query Operators?
+ **What are standard query Operators?**
   -A set of extension methods forming a query pattern is known as LINQ Standard Query Operators.
   -As building blocks of LINQ query expressions, these operators offer a range of query capabilities like filtering, sorting, projection, aggregation,etc
   ## LINQ standard query operators can be categorized into the following ones on the basis of their functionality.
- -1 Filtering Operators
-  -2 Join Operators
-  -3 Projection Operations
-  -4 Sorting Operators
- -5 Grouping Operators
- -6 Conversions
- -7 Concatenation
- -8 Aggregation
--9 Quantifier Operations
--10 Partition Operations
--11 Generation Operations
--12 Set Operations
--13 Equality
--14 Element Operators
+ - 1 Filtering Operators
+  - 2 Join Operators
+  - 3 Projection Operations
+  - 4 Sorting Operators
+ - 5 Grouping Operators
+ - 6 Conversions
+ - 7 Concatenation
+ - 8 Aggregation
+- 9 Quantifier Operations
+- 10 Partition Operations
+- 11 Generation Operations
+- 12 Set Operations
+- 13 Equality
+- 14 Element Operators
   **Filtering Operators
   - Filtering is an operation to restrict the result set such that it has only selected elements satisfying a particular condition.
   -Examples of operators
